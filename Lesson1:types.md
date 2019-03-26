@@ -18,14 +18,14 @@ int main()
 	i = 3.2;
 	// 2.9 > 2
 	i = 2.9;
-	// you won't get any error messenge for truncation
+	// you won't get any error message for truncation
 	i = -1;
 
 	// most situations should avoid using unsigned int
 	// should use integer
 	unsigned int u = 0;
 	// it will not store -2 rather than other thing
-	// still won't get any error messenge
+	// still won't get any error message
 	u = -2;
 
 	// we all use double instead of float
