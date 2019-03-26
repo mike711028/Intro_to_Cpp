@@ -3,3 +3,5 @@
 + C++ is strongly typed
 + Fundamental types
 + Casting (changing type)
+
+read `code` 
