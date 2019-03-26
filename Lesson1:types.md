@@ -13,7 +13,7 @@ int main()
 	// before assigning i, there would be some random variable in memory
 	// int can only store integer
 	int i = 2;
-	// it will be trucnated, if you store decmal
+	// it will be truncated, if you store decimal
 	// 3.2 > 3
 	i = 3.2;
 	// 2.9 > 2
