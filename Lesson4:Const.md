@@ -3,6 +3,6 @@
    * And the compiler will enfore this
 * Using const correctly improves correctness
    * Save you from errors of thought
-   * Allow optimizations at compile time
+   * Allow optimizations at **compile time**
 * Get const right from the beginning - very hard to add later
 * Use const everywhere you can
