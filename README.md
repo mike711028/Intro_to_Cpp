@@ -1,6 +1,5 @@
-# Intro_to_Cpp
+# Lesson 1 : types
 
-
-# 測試
-
-## 測試
++ C++ is strongly typed
++ Fundamental types
++ Casting (changing type)
