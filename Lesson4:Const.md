@@ -6,4 +6,3 @@
    * Allow optimizations at compile time
 * Get const right at the beginning - very hard to add later
 * Use const everywhere you can
-  *dfdjfkld
