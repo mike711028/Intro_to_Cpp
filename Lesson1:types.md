@@ -5,3 +5,7 @@
 + Casting (changing type)
 
 read `code` 
+
+```c
+int i = 1;
+```
