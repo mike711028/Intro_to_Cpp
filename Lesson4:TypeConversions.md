@@ -56,9 +56,7 @@ int main()
   // the result is 3
 	i = static_cast<int>(2.9);
   // the result is 2
-
 	i = -1;
-
 	std::cout << i << std::endl;
 
 	double d = 2.7;
