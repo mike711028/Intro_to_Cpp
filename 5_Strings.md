@@ -23,6 +23,4 @@ Consider the output displayed in Figure 2.1. Note that the first output
 correctly terminates because C++ encountered the null (\0) character. 
 The second did not terminate and output the contents of adjacent memory.
 
-![alt text](
-        Intro_to_Cpp/StringOutput.PNG
-      )
+![alt text](https://github.com/mike711028/Intro_to_Cpp/blob/master/StringOutput.PNG)
