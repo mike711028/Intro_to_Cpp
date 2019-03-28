@@ -17,4 +17,5 @@ We are expanding or widening the data type to a larger one. In this case, there 
 The following table highlights some potential data conversion problems.
 
 |**Conversion**|**Potential Issues**|
+|---|---|
 |Large floating point type to small floating point type|Loss of precision and/or the starting value might be out of range for the new type|
