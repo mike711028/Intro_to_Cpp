@@ -19,3 +19,31 @@ The following table highlights some potential data conversion problems.
 |**Conversion**|**Potential Issues**|
 |---|---|
 |Large floating point type to small floating point type|Loss of precision and/or the starting value might be out of range for the new type|
+|Floating point type to integer type|	Loss of the fractional component of the floating point type and/or out of range|
+|Bigger integer type to smaller integer type|Starting value may be out of range for the new type|
+
+This table **only deals with numeric data type conversions**.
+There are other conversion types such as from character to numeric or numeric to character, 
+or among character types. C++ also uses the boolean type that represents true or false. 
+If you assign a zero value to a bool variable, it will be converted to false. Any non-zero value is converted to true.
+
+When you want to **explicitly perform a conversion or cast**, you can use the type cast features of C++.
+For example, the previous widening conversion in the int to long cast was implicit but **you can also
+tell the compiler that you are know what you are doing** by using the type cast statement as in:
+```cpp
+long myLong = (long)myInt;
+// or you can use this version as well
+long myLong = long(myInt);
+```
+**C++ also provides a cast operator that is more restrictive in its usage**. 
+This in the form static_cast (type). This static cast operator can be used for 
+converting numeric values or to numeric values. As an example:
+```cpp
+char ch;
+int i = 65;
+float f = 2.5;
+double dbl;
+ch = static_cast<char>(i);   // int to char
+dbl = static_cast<double>(f);   // float to double
+```
+
