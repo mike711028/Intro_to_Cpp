@@ -64,3 +64,28 @@ If you are using some other languages, such as C#, and you attempt to access an 
 the C# runtime will throw an exception (error). **C++ doesn't offer such protection. 
 If you attempt to access an element that is outside the bounds of your array,
 you will still return data, but you have no idea what that data is.**
+
+The reason for this is because **an array is simply a pointer to a memory location**. 
+**The first element of the array is the starting memory address for the entire array**.
+If you have an array of integer data types, then the number of the elements multiplied 
+by the size of the int data type on your system, determines how much memory is used by the array,
+and at the same time, permits the access of the elements in the array by performing math 
+on the memory address to get at the required element. If you attempt to access oldNumbers[5],
+the program will simply return the data found at the memory address that is the next memory address
+location beyond the last array element. **This can be a dangerous situation and is in fact, 
+the result of some security issues found in software**.
+
+You can also iterate through an array by using a for loop. You will cover loops in module 3
+\so don't worry if you don't completely understand this example at this time.
+Essentially, the for loop starts at 0 and repeats the portion
+in the curly braces {} for each of the five steps in the loop.
+The following code example shows how to use a for loop to iterate through an array.
+```cpp
+//Iterating Over an Array 
+int oldNumbers[] = { 1, 2, 3, 4, 5 };
+for (int i = 0; i < 5; i++) 
+{ 
+     int number = oldNumbers[i]; 
+     ... 
+}
+```
