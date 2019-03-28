@@ -57,3 +57,16 @@ in your code, as in the second line above.
 As you can see from the code example, you use string in the same manner in which you would use any other 
 data type in C++. You also do not need to add a null character to terminate your string.
 
+```cpp
+#include <iostream>
+// must to include header
+#include <string>
+int main()
+{
+	using namespace std;
+	std::string newstring = "world";
+	std::cout << "Hello, " << newstring << std::endl;
+	// don't need to add std::
+	cout << "test: Hello, " << newstring << endl;
+}
+```
