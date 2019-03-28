@@ -71,4 +71,27 @@ int main()
 	std::cout << flag << std::endl;
 }
 ```
+```cpp
+#include <iostream>
+int main()
+{
+	// bcoz integer can't present 1.5, the truncation happens
+	// the result is 1
+	int i = 3 / 2;
 
+	// "integer" 3 is divided  by integer 2, so the result is "integer" 1
+	double d1 = 3 / 2;
+
+	// "double" 3.0 is divided by integer 2, so the result is "double" 1.5
+	double d2 = 3.0 / 2;
+	// let compiler figure out what the type of this expression is
+	// a is set as int
+	auto a = 3 / 2;
+	// b is set as double
+	auto b = 3.0 / 2;
+
+	std::cout << i << std::endl
+		<< d1 << std::endl
+		<< d2 << std::endl;
+}
+```
