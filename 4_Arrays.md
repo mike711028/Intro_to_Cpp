@@ -13,11 +13,11 @@ You can think of an array as a sequence of elements, all of which are the same t
 You can build simple arrays that have one dimension (a list), two dimensions (a table),
 three dimensions (a cube), and so on. Arrays in C++ have the following features:
 
-   +Every element in the array contains a value.
-   +Arrays are zero-indexed, that is, the first item in the array is element 0.
-   +**The size** of an array is the total number of elements that it can contain.
-   +Arrays can be single-dimensional, multidimensional, or jagged.
-   +**The rank** of an array is the number of dimensions in the array.
+...+Every element in the array contains a value.
+...+Arrays are zero-indexed, that is, the first item in the array is element 0.
+...+**The size** of an array is the total number of elements that it can contain.
+...+Arrays can be single-dimensional, multidimensional, or jagged.
+...+**The rank** of an array is the number of dimensions in the array.
 
 Arrays of a particular type can only hold elements of that type.
 **This means that you cannot store integers, longs, and character data types in the same array.**
