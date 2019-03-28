@@ -22,3 +22,5 @@ in code that uses this array. **The reason is that C++ does not consider the isN
 Consider the output displayed in Figure 2.1. Note that the first output 
 correctly terminates because C++ encountered the null (\0) character. 
 The second did not terminate and output the contents of adjacent memory.
+![Alt text](Intro_to_Cpp/StringOutput.PNG)
+      
