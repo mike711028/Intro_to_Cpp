@@ -39,4 +39,21 @@ array size specified for the null character**. If you create an array that is la
 for the string literal along with the null character, then C++ simply fills the remaining
 elements of the array with null characters.
 
+**The string Class** If the use of character arrays, single quoted characters, and null termination 
+characters are making you think that strings aren't worth the hassle, consider the string class instead.
+The ISO/ANSI standard helped to expand the string handling capabilities of C++ by adding the string class.
+
+In order to use the string class, you have to include the string header file. We have not covered
+namespaces yet but to make typing much easier, you would add a using statement as in the following example.
+
+```cpp
+using namespace std; 
+string myString = "Hello!"; 
+std::string myNewString = "Less typing";
+```
+Without the using directive, you would have to type std::string every time you wanted to use the string class
+in your code, as in the second line above.
+
+As you can see from the code example, you use string in the same manner in which you would use any other 
+data type in C++. You also do not need to add a null character to terminate your string.
 
