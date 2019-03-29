@@ -16,6 +16,7 @@ a value of 1. As a result, the previous enum 'Day' would contain the values:
    + Monday = 1
    + Tuesday = 2
    + etc.
+
 You can change the default by specifying a starting value for your enum as in the following example.
 ```cpp
 enum Day { Sunday = 1, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
