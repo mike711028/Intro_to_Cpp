@@ -1,0 +1,5 @@
+# Unions
+
+A union, in C++, is similar to a structure in that it can store multiple, disparate data types. 
+The differentiation is that a union can only store one piece of data at a time. What does that signify? 
+It's best represented using an example.
