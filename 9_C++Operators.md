@@ -7,7 +7,7 @@ C++ also allows you to use mathematical operators for incrementing values to hel
 You can also make use of bitwise operators to speed up some operations in your code.
 
 |Operator|Description|
-|---|---|
+|:---:|:---:|
 |+|addition|
 |-|subtraction|
 |* |multiplication|
