@@ -25,6 +25,8 @@ You can also make use of bitwise operators to speed up some operations in your c
 |>=|greater than or equal to|
 |<=|less than or equal to|
 |&&|logical AND|
-| | | |logical OR|
+| |   |  |logical OR|
 |!|logical NOT|
+
+
 
