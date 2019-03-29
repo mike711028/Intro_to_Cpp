@@ -15,7 +15,7 @@ You can also make use of bitwise operators to speed up some operations in your c
 |%|modulo|
 |+= (y += x)|same as y = y + x|
 |-= (y -= x)|same as y = y - x|
-| *= (y * = x)|same as y = y * x |
+| * = (y * = x)|same as y = y * x |
 |++|increment by 1|
 |--|decrement by 1|
 |==|equal to|
@@ -25,7 +25,7 @@ You can also make use of bitwise operators to speed up some operations in your c
 |>=|greater than or equal to|
 |<=|less than or equal to|
 |&&|logical AND|
-| **||** |logical OR|
+| | |  |logical OR|
 |!|logical NOT|
 
 
