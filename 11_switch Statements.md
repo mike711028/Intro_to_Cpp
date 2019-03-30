@@ -43,6 +43,5 @@ If you are coming from another programming language, such as C#, that also uses 
 you might notice that in the C# language, you can use string values in your switch statements and
 don't have to use integers or enumerated types.  C++ switch statements support the following 
 data types as expressions:
-
-   +intrinsic data types such as int or char
-   +enumerations
+   + intrinsic data types such as int or char
+   + enumerations
