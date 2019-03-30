@@ -15,6 +15,9 @@ int main()
      cout << ( i > j ? i : j ) << " is greater." << endl; 
 }
 ```
+```
+(condition) ? (if_true) : (if_false)
+```
 In this example, we have two integer variables, i and j which are initialized to 1 and 2 respectively. 
 The ternary operator is embedded inside the cout statement and essentially follows this pattern:
 
@@ -25,7 +28,7 @@ In the code example here, j is greater than i so the condition evaluates to fals
 is output to the console along with the text is greater.  In other words, the output is "2 is greater." 
 If i was 5 and j was 2, the output would be, "5 is greater." 
 ```
-i > j ? i : j where i is greater than j then the bold value is selected
+i > j ? i : j where **i** is greater than j then the bold value is selected
 
 i > j ? i : j where j is greater than i, then the bold value is selected
 ```
