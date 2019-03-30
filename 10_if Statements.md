@@ -5,6 +5,7 @@ of code associated with the ```if``` statement is executed.  If the statement is
 either falls through to the line after the ```if``` statement, or after the closing curly brace of an ```if``` statement block.
 
 The following code sample demonstrates an ```if``` statement to determine if a response contains a value of **y** or **Y**.
+
 **if statements**
 ```cpp
 char response = 'y';
@@ -26,6 +27,7 @@ is to always use curly braces for your if statement.
 In C++, ```if``` statements can also have associated ```else``` clauses. The ```else``` clause executes when the ```if``` statement is **false**.
 
 The following code example shows how to use an ```if else``` statement to execute code when a condition is **false**.
+
 **if else statements**
 ```cpp
 string response;
@@ -44,6 +46,7 @@ the block of code associated with that statement is executed and control leaves 
 code associated with the entire ```if``` construct.
 
 The following code example shows how to use an ```if``` statement with an ```else if``` clause.
+
 **else if statements**
 ```cpp
 string response;
