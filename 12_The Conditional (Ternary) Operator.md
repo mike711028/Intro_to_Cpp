@@ -28,7 +28,7 @@ In the code example here, j is greater than i so the condition evaluates to fals
 is output to the console along with the text is greater.  In other words, the output is "2 is greater." 
 If i was 5 and j was 2, the output would be, "5 is greater." 
 ```
-i > j ? i : j where **i** is greater than j then the bold value is selected
+i > j ? i : j where i is greater than j then the bold value is selected
 
 i > j ? i : j where j is greater than i, then the bold value is selected
 ```
