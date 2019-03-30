@@ -35,7 +35,7 @@ Without the break statement, the code will "**fall through**" to the remaining c
 a break statement.   Be very careful in using fall through logic in your switch statements.  
 The most common use for a fall through scenario is when you want to handle multiple cases with
 a single statement or set of statements.
-
+(如果switch裡的case都不符合 那必須要有個default break 讓程式可以跳出)
 If you are coming from another programming language, such as C#, that also uses the switch statement,
 you might notice that in the C# language, you can use string values in your switch statements and
 don't have to use integers or enumerated types.  C++ switch statements support the following 
