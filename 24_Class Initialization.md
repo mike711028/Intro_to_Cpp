@@ -33,3 +33,4 @@ public:
 
 	}
   ```
+constructor 在後面會講到
