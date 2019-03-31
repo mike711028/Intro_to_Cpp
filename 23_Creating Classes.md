@@ -43,4 +43,5 @@ Then, using what is known as "dot notation" or the dot operator, we provide valu
 for the width and height of each rectangle.  The outer rectangle is 10 x 10 and the inner rectangle is 5x5.
 
 class 和 struct 不同的地方在哪裡?
+
 class 可以做成 header 並且用include <xxx.h> 引入
