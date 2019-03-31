@@ -51,5 +51,4 @@ C++ makes use of the following keywords that apply to storage classes:
    + **extern** - used to declare an object that is defined in another translation unit of within 
      the enclosing scope but has an external linkage.
    + **thread_local** - declares that the identifier is only accessible on the thread in which it is created. 
-     This prevents sharing of the identifier across multiple threads in the same application.  
-     This is part of the C++11 standard.
+     This prevents sharing of the identifier across multiple threads in the same application.This is part of the C++11 standard.
