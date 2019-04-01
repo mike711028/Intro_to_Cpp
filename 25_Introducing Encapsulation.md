@@ -161,7 +161,16 @@ int main()
 }
 ```
 ## make class as header file and seperate functionality into some piece file
-we don't need to implement all functionality inside the header file
+   + we don't need to implement all functionality inside the header file
+   + you might do this, if the header is very large
+   + you want to keep the implimentation of function in just **one file** rather than in header file
+   
+     Moreover, we keep everything mostly in one file today
+   + a very large project **takes a long time to compile**, oftentimes **making header file as small as possible** 
+   
+     and **moving member functions into a seperate file** is generally done. both to improve compile times
+   + by this method, developers are easy to modify or read **the specific files** in their cpp files
+   
 ### header file
 ```cpp
 // rectangle.h
