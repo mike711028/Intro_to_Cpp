@@ -45,3 +45,6 @@ for the width and height of each rectangle.  The outer rectangle is 10 x 10 and 
 class 和 struct 不同的地方在哪裡?
 
 class 可以做成 header 並且用include <xxx.h> 引入
+
+class與struct有很明顯的的差別是，class可以定義member function，但struct不行。
+另外，class預設的member權限是private，而struct預設則是public。
