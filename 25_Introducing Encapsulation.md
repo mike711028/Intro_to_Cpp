@@ -14,11 +14,12 @@ problems with your executing code.  It also helps with debugging of your code.
 #include <iostream>
 class rectangle
 {
-public:
+	// "public" means you can use these from outside of the class, like main function
+	public:
 	int width;
 	int height;
 
-	// member function can directly operate variables in this class
+	// "member function" can directly operate variables in this class
 	// don't need input coz the variables are already in class
 	int compute_area()
 	{
@@ -34,6 +35,49 @@ int main()
 	std::cout << "width is " << small_rec.width << std::endl
 		<< "height is " << small_rec.height << std::endl
 		<< "area is " << area << std::endl;
+
+	return 0;
+}
+```
+# the differences between "public" and "private"
+```cpp
+#include <iostream>
+class rectangle
+{
+	// "public" means you can use these from outsie of the class, like in main function
+	public:
+	// member function can directly operate variables in this class
+	// don't need input coz the variables are already in class
+	int compute_area()
+	{
+		return height * width;
+	}
+	int get_width()
+	{
+		return width;
+	}
+	int get_height()
+	{
+		return height;
+	}
+	// "private" can not use these from outside of the class, like in main function
+	private:
+		int width;
+		int height;
+};
+
+int main()
+{ 
+	rectangle small_rec = {3, 4};		
+
+	// these won't work
+	int the_width = small_rec.width;
+	int the_height = small_rec.height;
+
+	// these will work
+	int the_width = small_rec.get_width;
+	int the_height = small_rec.get_height;
+	int the_area = small_rec.compute_area;
 
 	return 0;
 }
