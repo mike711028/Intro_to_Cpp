@@ -39,7 +39,7 @@ int main()
 	return 0;
 }
 ```
-# the differences between "public" and "private"
+## the differences between "public" and "private"
 ```cpp
 #include <iostream>
 class rectangle
