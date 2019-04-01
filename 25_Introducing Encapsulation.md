@@ -110,6 +110,49 @@ int main()
 
 	return 0;
 }
+```
+## methods of defaulting variables (constructor)
+```cpp
+#include <iostream>
+class rectangle
+{
+	public:
+		// default constructor
+		rectangle() : width{}, height{}
+		{}
+		// initialize rectangle with equal value
+		explicit rectangle(int i) : width{ i }, height{ i }
+		{}
+		// initialze rectangle with custom values
+		rectangle(int initial_width, int initial_height) : width{ initial_width }, height{ initial_height }
+		{}
+	// use member function to customize values
+	void resize(int new_width, int new_height)
+	{
+		width = new_width;
+		height = new_height;
+	}	
+	private:
+		int width;
+		int height;
+};
 
+int main()
+{ 
+	// 1
+	rectangle rec1;
+	// 2  (), {} are available
+	rectangle rec2(66);
+	rectangle rec2_2{ 32 };
+	//3   (), {} are available
+	rectangle rec3(10, 23);
+	rectangle rec3_2{24, 64};
+	//4
+	rectangle rec4{};
+	rec4.resize(60, 87);
+	
+	return 0;
+}
+```
 
 
