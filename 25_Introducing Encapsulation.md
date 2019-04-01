@@ -160,5 +160,33 @@ int main()
 	return 0;
 }
 ```
-
+## make class as header file and seperate functionality into some piece file
+we don't need to implement all functionality inside the header file
+### header file
+```
+// rectangle.h
+class rectangle
+{
+public:
+	// default constructor
+	rectangle() : width{}, height{}
+	{}
+	// initialize rectangle with equal value
+	explicit rectangle(int i) : width{ i }, height{ i }
+	{}
+	// initialze rectangle with custom values
+	rectangle(int initial_width, int initial_height) : width{ initial_width }, height{ initial_height }
+	{}
+	// use member function to customize values
+	// the body remove to resize.cpp, so just declare it here
+	void resize(int new_width, int new_height);
+	~~{
+		width = new_width;
+		height = new_height;
+	}~~	
+private:
+	int width;
+	int height;
+};
+```
 
