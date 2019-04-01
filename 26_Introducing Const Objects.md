@@ -7,7 +7,7 @@ Immutable simply means that **they cannot change**.
    + if the **member functions** inside of class don't change variables, you can call them 
      as long as **adding "const" behind declaration**
    + thinking about "const" from the very beginning in order to avoid modifying later
-## head file
+## header file
 ```cpp
 // rectangle.h
 class rectangle
