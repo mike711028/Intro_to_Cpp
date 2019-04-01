@@ -9,6 +9,11 @@ as the act of including all data and behavior required of the class, within the 
 a poor practice because it presents the opportunity for potentially incorrect values to be 
 assigned to these member variables.  This can result in unexpected behavior or more serious 
 problems with your executing code.  It also helps with debugging of your code.
+
+   + We want to restrict how we use types as much as possible.
+   + we want to make it easy to use them correctly which means providing as few operations as are required.
+   + we don't want to make them hard to use, we want to make them easy to use correctly.
+
 ## member function
 ```cpp
 #include <iostream>
