@@ -163,7 +163,7 @@ int main()
 ## make class as header file and seperate functionality into some piece file
 we don't need to implement all functionality inside the header file
 ### header file
-```
+```cpp
 // rectangle.h
 class rectangle
 {
@@ -178,12 +178,8 @@ public:
 	rectangle(int initial_width, int initial_height) : width{ initial_width }, height{ initial_height }
 	{}
 	// use member function to customize values
-	// the body remove to resize.cpp, so just declare it here
+	//******* the body remove to resize.cpp, so just declare it here *******
 	void resize(int new_width, int new_height);
-	~~{
-		width = new_width;
-		height = new_height;
-	}~~	
 private:
 	int width;
 	int height;
