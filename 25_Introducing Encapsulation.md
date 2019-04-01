@@ -60,7 +60,7 @@ class rectangle
 	{
 		return height;
 	}
-	// "private" can not use these from outside of the class, like in main function
+	// "private" can not use these from outside of the class, like main function
 	private:
 		int width;
 		int height;
@@ -68,7 +68,7 @@ class rectangle
 
 int main()
 { 
-	rectangle small_rec = {3, 4};		
+	rectangle small_rec = {};		
 
 	// these won't work
 	int the_width = small_rec.width;
@@ -82,4 +82,34 @@ int main()
 	return 0;
 }
 ```
+## initialize variables in "private" content
+we can't access variables in "private", but we can initialize them in the class by member function "resize"
+```cpp
+#include <iostream>
+class rectangle
+{
+	// "public" means you can use these from outsie of the class, like in main function
+	public:
+	// initialize the variables in "private" content coz we can't access them
+	void resize(int new_width, int new_height)
+	{
+		width = new_width;
+		height = new_height;
+	}	
+	private:
+		int width;
+		int height;
+};
+
+int main()
+{ 
+	// initialize class as 0/NULL;
+	rectangle small_rec = {};
+	// initialze private variables by resize function
+	small_rec.resize(3, 4);
+
+	return 0;
+}
+
+
 
