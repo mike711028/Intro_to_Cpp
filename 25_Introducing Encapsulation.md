@@ -146,6 +146,7 @@ int main()
 { 
 	// 1
 	rectangle rec1;
+	rectangle rec1_2{};   // prefer to use this syntax coz it let reader know you default it
 	// 2  (), {} are available
 	rectangle rec2(66);
 	rectangle rec2_2{ 32 };
