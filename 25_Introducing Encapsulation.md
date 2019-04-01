@@ -185,4 +185,39 @@ private:
 	int height;
 };
 ```
+### resize.cpp
+```cpp
+#include "rectangle.h"    // must include header file
+
+// seperate some functions into different file from header file
+
+// call the function by full name,  "rectangle ::" + "function name"
+// " :: " means the scope resolution operator
+void rectangle :: resize(int new_width, int new_height)
+{
+	width = new_width;
+	height = new_height;
+}
+```
+### main function
+```cpp
+#include <iostream>
+#include "rectangle.h"   // must include "rectangle.h"
+int main()
+{ 
+	// 1
+	rectangle rec1;
+	// 2
+	rectangle rec2(66);
+	rectangle rec2_2{ 32 };
+	//3
+	rectangle rec3(10, 23);
+	rectangle rec3_2{24, 64};
+	//4
+	rectangle rec4{};
+	rec4.resize(60, 87);
+	
+	return 0;
+}
+
 
